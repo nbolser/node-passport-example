@@ -1,6 +1,6 @@
 # node-passport-example
 
-Example app; Node.js, Passport.js, MongoDB, Bootswatch
+Example app; Node.js, EJS, Passport.js, MongoDB, Bootswatch
 
 ![image](https://user-images.githubusercontent.com/1649699/109596271-25745080-7ad3-11eb-8d15-60f990d1243d.png)
 
