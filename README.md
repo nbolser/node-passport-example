@@ -12,10 +12,11 @@ Example app; Node.js, EJS, Passport.js, MongoDB, Bootswatch
 $ brew install node
 ```
 
-2. Add `MONGO_DB_PASSWORD` to `.env`
+2. Add `MONGO_DB_USER` and `MONGO_DB_PASSWORD` to `.env`
 
 ```bash
-$ echo "MONGO_DB_PASSWORD=<password>" > .env
+$ echo "MONGO_DB_USER=<password>" >> .env
+$ echo "MONGO_DB_PASSWORD=<password>" >> .env
 ```
 
 ## Installation
