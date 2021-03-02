@@ -4,8 +4,6 @@ const { port, mongoUri } = require('./config');
 const mongoose = require('mongoose')
 const app = express()
 
-console.log(mongoUri);
-
 // Connect to MongoDb
 mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDb connected...'))
@@ -14,6 +12,9 @@ mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
 // EJS
 app.use(expressLayouts)
 app.set('view engine', 'ejs')
+
+// Parse
+app.use(express.urlencoded({ extended: false }))
 
 // Routes
 app.use('/', require('./routes/index'))
